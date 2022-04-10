@@ -32,7 +32,7 @@ a{
 }
 
 .header__inner{
-	height: 100vh;
+	min-height: 100vh;
 	margin-bottom: 20px;
 }
 
@@ -66,7 +66,7 @@ a{
 	right: 180px;
 	top: 0;
 	animation-name: logo-anim;
-	animation-duration: .7s;
+	animation-duration: 1.2s;
 }
 @keyframes logo-anim {
 	0%{
@@ -1281,15 +1281,27 @@ footer{
 	}
 
 	.name__title {
-    	padding-left: 12px;
+    	padding-left: 0px;
 	}
 
 	.name__subtitle {
-    	margin-left: 112px;
+    	margin-left: 88px;
 	}
 
 	.header__top {
     	margin-bottom: -10vh;
+	}
+
+	.name__logo {
+    right: 111px;
+	}
+
+	.header__name {
+    margin-bottom: 36vh;
+	}
+
+	.header__logo {
+    margin-left: 0px;
 	}
 }
 

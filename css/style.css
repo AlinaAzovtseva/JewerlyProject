@@ -32,7 +32,7 @@ a {
 }
 
 .header__inner {
-  height: 100vh;
+  min-height: 100vh;
   margin-bottom: 20px;
 }
 
@@ -69,8 +69,8 @@ a {
   top: 0;
   -webkit-animation-name: logo-anim;
           animation-name: logo-anim;
-  -webkit-animation-duration: 0.7s;
-          animation-duration: 0.7s;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
 }
 
 @-webkit-keyframes logo-anim {
@@ -1358,15 +1358,27 @@ footer {
   }
 
   .name__title {
-    padding-left: 12px;
+    padding-left: 0px;
   }
 
   .name__subtitle {
-    margin-left: 112px;
+    margin-left: 88px;
   }
 
   .header__top {
     margin-bottom: -10vh;
+  }
+
+  .name__logo {
+    right: 111px;
+  }
+
+  .header__name {
+    margin-bottom: 36vh;
+  }
+
+  .header__logo {
+    margin-left: 0px;
   }
 }
 @media screen and (max-width: 391px) {
