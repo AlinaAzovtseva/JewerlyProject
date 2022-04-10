@@ -97,7 +97,7 @@ a{
 	line-height: 24px;
 	margin-left: 270px;
 	position: relative;
-		&:hover{
+	&:hover{
 			color: gray;
 		}
 
@@ -220,7 +220,7 @@ a{
 	padding-right: 125px;
 }
 
-.fotm__title{
+.form__title{
 	font-family: Forum;
 	color: #fff;
 	font-size: 48px;
@@ -647,17 +647,17 @@ footer{
  }
 
 @media screen and (max-width: 1371px){
-.name__logo{
+	.name__logo{
 	right: 250px;
-}
+	}
 
-.header__top {
-    margin-bottom: 23vh;
-}
+	.header__top {
+	margin-bottom: 23vh;
+	}
 
-.herder__name {
-    margin-bottom: 29vh;
-}
+	.herder__name {
+	margin-bottom: 29vh;
+	}
 
 	.for-title::after {
     content: "";
@@ -734,7 +734,7 @@ footer{
     margin-bottom: 186px;
 	}
 
-	.fotm__title {
+	.form__title {
     margin-left: 45px;
 	}
 
@@ -821,6 +821,7 @@ footer{
 
 	.adress__form {
     padding-right: 5px;
+    width: 100vw;
 	}
 
 	.price__title {
@@ -836,9 +837,9 @@ footer{
 	}
 
 	.price__title2{
-		font-size: 12px;
-    	line-height: 5px;
-    	margin-bottom: 5px;
+	font-size: 12px;
+    line-height: 5px;
+    margin-bottom: 5px;
 	}
 
 	.price__subtitle2 {
@@ -851,26 +852,26 @@ footer{
 
 @media screen and (max-width: 821px){
 
-.name__logo {
-    right: 382px;
-    top: 196px;
-	}
+	.name__logo {
+	right: 382px;
+	top: 196px;
+		}
 
-.herder__name {
-    margin-bottom: 52vh;
-	}
+	.herder__name {
+	margin-bottom: 52vh;
+		}
 
-.name__title {
-    padding-left: 66px;
-	}
+	.name__title {
+	padding-left: 66px;
+		}
 
-.logo {
-    padding-left: 118px;
-	}
+	.logo {
+	padding-left: 118px;
+		}
 
-.adress__map {
-    background-size: 191%;}
-	}
+	.adress__map {
+	background-size: 191%;}
+		}
 
 @media screen and (max-width: 801px){
 
@@ -941,7 +942,7 @@ footer{
     margin-bottom: 143px;
 	}
 
-	.fotm__title {
+	.form__title {
     margin-left: 45px;
     width: 339px;
 	}
@@ -949,7 +950,7 @@ footer{
 	.form__text {
     font-size: 16px;
     margin-left: 45px;
-    width: 286px;
+    max-width: 286px;
 	}
 
 	.form__input {
@@ -1058,7 +1059,7 @@ footer{
 		width: 0;
 	}
 
-	.fotm__title {
+	.form__title {
     margin-left: 178px;
     margin-right: 99px;
 	}
@@ -1130,10 +1131,9 @@ footer{
     margin-top: 182px;
 	}
 
-	.fotm__title {
+	.form__title {
     margin-left: 122px;
     margin-right: 51px;
-    width: 380px;
 	}
 
 	.form__text {
@@ -1192,7 +1192,7 @@ footer{
     padding-right: 0px;
 	}
 
-	.fotm__title {
+	.form__title {
     margin-left: 90px;
 	}
 
@@ -1252,19 +1252,18 @@ footer{
     left: 142px;
 	}
 
-	.fotm__title {
-    margin-left: 57px;
+	.form__title {
+    margin-left: 30px;
     margin-right: 0px;
-    width: 357px;
-    font-size: 40px
+    font-size: 33px
 	}
 
 	.form__text {
-    margin-left: 57px;
+    margin-left: 30px;
 	}
 
 	.form__input {
-    margin-left: 57px;
+    margin-left: 30px;
 	}
 
 	.social__title {
@@ -1304,16 +1303,16 @@ footer{
     	margin-left: 92px;
 	}
 
-	.fotm__title {
-    width: 333px;
-	}
-
 	.form__input {
-    width: 292px;
+    max-width: 292px;
 	}
 
 	.social__title {
     padding: 100px 0 80px 20px;
+	}
+
+	.swiper-slide img {
+    overflow: hidden;
 	}
 }
 
@@ -1337,10 +1336,6 @@ footer{
 	.header__top {
     	margin-bottom: -16vh;
 	}
-
-	.fotm__title {
-    width: 317px;
-	}
 }
 
 @media screen and (max-width: 361px){
@@ -1349,8 +1344,24 @@ footer{
     	margin-bottom: -19vh;
 	}
 
-	.header__top {
-    	margin-bottom: -19vh;
+	.header__link--bur {
+    	padding-left: 0px;
+	}
+
+	.header__link {
+    	padding-left: 2px;
+	}
+
+	.header__logo {
+    margin-left: -20px;
+	}
+
+	.name__title {
+    font-size: 38px;
+	}
+
+	.name__subtitle {
+    margin-left: 30px;
 	}
 
 	.for-subtitle {
@@ -1365,10 +1376,6 @@ footer{
     left: 104px;
 	}
 
-	.fotm__title {
-    width: 303px;
-	}
-
 	.main__for {
     margin-bottom: 145px;
 	}
@@ -1376,13 +1383,7 @@ footer{
 
 @media screen and (max-width: 321px){ 
 
-	.header__link--bur {
-    	padding-left: 0px;
-	}
-
-	.header__link {
-    	padding-left: 2px;
-	}
+	
 
 	.name__subtitle {
     	margin-left: 42px;
@@ -1405,7 +1406,7 @@ footer{
 		width: 80%;
 	}
 
-	.fotm__title {
+	.form__title {
     margin-left: 20px;
 	}
 
