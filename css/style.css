@@ -52,24 +52,63 @@ a {
 }
 
 .header__link--bur {
-  padding-left: 100px;
+  padding-left: 90px;
+}
+.header__link--bur img:hover {
+  width: 9%;
 }
 
 .header__name {
   position: relative;
-  margin-bottom: 48vh;
+  margin-bottom: 30vh;
 }
 
 .name__logo {
   position: absolute;
   right: 180px;
   top: 0;
+  -webkit-animation-name: logo-anim;
+          animation-name: logo-anim;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
 }
 
+@-webkit-keyframes logo-anim {
+  0% {
+    -webkit-transform: translateY(-3000px);
+            transform: translateY(-3000px);
+  }
+  75% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes logo-anim {
+  0% {
+    -webkit-transform: translateY(-3000px);
+            transform: translateY(-3000px);
+  }
+  75% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
 .name__title {
   font-family: "Forum", cursive;
   font-size: 64px;
   line-height: 71px;
+}
+.name__title:hover {
+  color: gray;
 }
 
 .name__subtitle {
@@ -79,6 +118,9 @@ a {
   line-height: 24px;
   margin-left: 270px;
   position: relative;
+}
+.name__subtitle:hover {
+  color: gray;
 }
 .name__subtitle::before {
   content: "";
@@ -694,7 +736,7 @@ footer {
 }
 @media screen and (max-width: 1371px) {
   .name__logo {
-    right: 263px;
+    right: 250px;
   }
 
   .header__top {

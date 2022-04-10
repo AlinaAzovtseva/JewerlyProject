@@ -45,27 +45,49 @@ a{
 
 .header__link{
 	padding-left: 40px;
-}	
+}
+
 
 .header__link--bur{
-	padding-left: 100px;
+	padding-left: 90px;
+
+	& img:hover{
+		width: 9%;
+	}
 } 
 /////////////
 .header__name{
 	position: relative;
-	margin-bottom: 48vh;
+	margin-bottom: 30vh;
 }
 
 .name__logo{
 	position: absolute;
 	right: 180px;
 	top: 0;
+	animation-name: logo-anim;
+	animation-duration: .7s;
+}
+@keyframes logo-anim {
+	0%{
+		transform: translateY(-3000px);
+	}
+	75%{
+		transform: translateY(30px);
+	}
+
+	100%{
+		transform: translateY(0);
+	}
 }
 
 .name__title{
 	font-family: 'Forum', cursive;
 	font-size: 64px;
 	line-height: 71px;
+		&:hover{
+			color: gray;
+		}
 }
 
 .name__subtitle{
@@ -75,6 +97,9 @@ a{
 	line-height: 24px;
 	margin-left: 270px;
 	position: relative;
+		&:hover{
+			color: gray;
+		}
 
    &::before{
 	content:'';
@@ -623,7 +648,7 @@ footer{
 
 @media screen and (max-width: 1371px){
 .name__logo{
-	right: 263px;
+	right: 250px;
 }
 
 .header__top {
