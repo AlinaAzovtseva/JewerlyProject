@@ -337,9 +337,13 @@ a {
   line-height: 23px;
   text-transform: none;
   padding-bottom: 15px;
+  cursor: pointer;
 }
 .category-title li:first-child {
   padding-top: 30px;
+}
+.category-title li:hover {
+  border-bottom: 1px solid #fff;
 }
 
 .all {
