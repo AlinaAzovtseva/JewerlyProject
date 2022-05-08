@@ -12,8 +12,7 @@ new Swiper(".swiper-container", {
         navigation: {
           prevEl: ".swiper__btn-prev",
           nextEl: ".swiper__btn-next",
-             },
-              
+             },  
                   breakpoints: {
                 800: {
                     slidesPerView: 2,
@@ -27,8 +26,14 @@ new Swiper(".swiper-container", {
                     slidesOffsetBefore: 0,
                      },
                  }
-
-                 
-
       });
-    
+  
+
+const burger = document.querySelector('.menu-burger');
+if (burger) {
+  const headerP = document.querySelector('.header__popup');
+  burger.addEventListener("click" ,function (e) {
+    burger.classList.toggle('active');
+    headerP.classList.toggle('active');
+  });
+}  
