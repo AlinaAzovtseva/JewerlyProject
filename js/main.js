@@ -30,10 +30,13 @@ new Swiper(".swiper-container", {
   
 
 const burger = document.querySelector('.menu-burger');
+const headerP = document.querySelector('.header__popup');
+const body = document.querySelector('body');
 if (burger) {
-  const headerP = document.querySelector('.header__popup');
+ 
   burger.addEventListener("click" ,function (e) {
     burger.classList.toggle('active');
     headerP.classList.toggle('active');
+    body.classList.toggle('lock');
   });
 }  

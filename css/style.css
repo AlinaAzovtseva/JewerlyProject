@@ -12,6 +12,9 @@ body {
   font-size: 18px;
   font-weight: 300;
 }
+body.lock {
+  overflow: hidden;
+}
 
 a {
   color: inherit;
@@ -63,6 +66,7 @@ a {
   height: 20px;
   z-index: 3;
   margin-left: 70px;
+  cursor: pointer;
 }
 
 .menu-burger:before,
@@ -312,7 +316,7 @@ a {
   margin-top: 70px;
   font-family: "Futura PT";
   padding-bottom: 70px;
-  border-bottom: 1px solid #2F2F2F;
+  border-bottom: 2px solid #2F2F2F;
 }
 
 .popup-category_inner {
@@ -341,6 +345,31 @@ a {
 .all {
   color: #EFC58B;
   font-style: italic;
+}
+
+.popup-footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 70px;
+  padding-bottom: 80px;
+  font-family: "Futura PT";
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.popup-footer__inner > img {
+  padding-right: 85px;
+}
+
+.phone-p__title, .mail_tel-p {
+  padding-bottom: 15px;
+}
+
+.icons-p {
+  padding-top: 20px;
+  padding-bottom: 48px;
 }
 
 .main__for {
@@ -914,6 +943,33 @@ footer {
 
   .price__box {
     min-height: 320px;
+  }
+
+  .header__popup_list {
+    margin-top: 20px;
+  }
+
+  .popup_list__item {
+    padding: 15px 0;
+  }
+
+  .header__popup-category {
+    margin-top: 15px;
+    padding-bottom: 1px;
+  }
+
+  .popup-footer__inner {
+    padding-top: 15px;
+  }
+
+  .category-title {
+    font-size: 13px;
+    line-height: 5px;
+  }
+
+  .category-title li {
+    font-size: 16px;
+    line-height: 9px;
   }
 }
 @media screen and (max-width: 1270px) {
